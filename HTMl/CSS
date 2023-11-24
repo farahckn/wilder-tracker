@@ -1,0 +1,25 @@
+-> nav
+    -> 3 items (button avec pointer) / burger (format Iph)     //Paul
+-> header
+    -> Title with img              //Paul
+-> body
+  -> main
+    -> section 1 "Desciption"  -> format Iph suit de questionnaire/ desktop avant le questionnaire                    //Farah
+    -> section 2 formulaire "indique ton nom" / button "démarrer"          //Farah
+    -> section 3: Questions
+          -> section 3.1
+              -> grid 5 sections : Question / Propositon en plrs vignettes / button next / conseil (action:pop -> après clique sur proposition) / button chevron    // Thibault-Paul /Tous ensemble       
+          -> section 3.2
+              -> grid 5 sections : Question / Propositon en plrs vignettes / button next / conseil (action:pop -> après clique sur proposition) / button chevron
+          -> section 3.3
+              -> grid 5 sections : Question / Propositon en plrs vignettes / button next / conseil (action:pop -> après clique sur proposition) / button chevron
+          -> section 3.4
+              -> grid 5 sections : Question / Propositon en plrs vignettes / button next / conseil (action:pop -> après clique sur proposition) / button chevron
+          -> section 3.5
+              -> grid 5 sections : Question / Propositon en plrs vignettes / button next / conseil (action:pop -> après clique sur proposition) / button chevron
+    -> section 4: Score (affichage score) -> format Iph fin de questionnaire/ desktop suit le questionnaire         // Alexia
+    -> section 5: message de result               // Alexia
+    -> section 6: affichage d'un tableau avec result des wilders    //   Cecile
+  -> footer: avec linkdn et github        //  Cecile
+
+
