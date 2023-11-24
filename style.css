@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+nav {
+    display: flex;  
+    justify-content: flex-end; 
+    color: white;
+    background-color: #ee39d9e6;
+    padding: 0.5em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 0.7em
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
