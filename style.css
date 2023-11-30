@@ -137,4 +137,23 @@ h1{
     font-size:2.3em; 
 }
 
+section.introduction {
+    padding: 0.5em;
+ }
+ 
+.startmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+ button.start {
+     width: 30%;
+     height: 100%;
+     border-radius: 8px;
+
+     
+ }
 
