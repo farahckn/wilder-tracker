@@ -8,18 +8,84 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="shortcut icon" href="assets/img/favicon.ico" />
 </head>
-<nav>
-  <ul>
-    <li>Home</li>
-    <li>Hing</li>
-    <li>Others</li>
-  </ul>
-</nav>
 
 <body>
-  <main>
-    <h1 class="title-with-image">Wilder Quizz</h1>
+  <header>
+    <img src="/assets/img/apple-touch-icon.png" alt="logo" />
+    <nav>
+      <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Hing</a></li>
+          <li><a href="#">Others</a></li>
+        </ul>
+      </div>
 
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+    </nav>
+  </header>
+
+  <h1>Wilder Tracker</h1>
+
+  <main>
+
+    <!--Partie avant questions-->
+    <section class="introduction">
+      <h2>Bienvenue Wilder</h2>
+      <p> Afin de t'aider à garder de bonnes habitudes lors de ta formation en remote réponds aux questions suivantes et
+        découvre ton score !</p>
+
+      <div class="startmenu">
+        <input placeholder="Indique ton prénom">
+
+        <button class="start"> Démarrer </button>
+      </div>
+    </section>
+
+    <section class="sticker">
+      <h3> Question 1</h3>
+      <div class="box">
+        <button class="choice">Reponse 1<input type="radio"></button>
+        <button class="choice">Reponse 1<input type="radio"></button>
+        <button class="choice">Reponse 1</button>
+        <button class="choice">Reponse 1</button>
+      </div>
+
+      <div class="box2">
+        <details open>
+          <summary>REGARDE</summary>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore aliquid eveniet sequi praesentium ut
+            molestiae
+            .</p>
+        </details>
+        <button class="next">Suivant</button>
+      </div>
+    </section>
+    <section>
+      <a id="affichagescore" href="#">
+
+        <h1>Score</h1>
+        <p>15</p>
+      </a>
+      <div class="message">
+        <h2><strong> Bravo ! </strong> </h2>
+        <p>
+          Tu as obtenu un score de xx !
+          Tu es sur la bonne voie !
+
+          Tu as obtenu un score de xx.
+          N’hésites pas à suivre les conseils suivants pour améliorer ton score :
+
+        </p>
+      </div>
+    </section>
     <!--=========Début Classement Cécile=============-->
     <section class="classement">
       <table>
@@ -63,7 +129,7 @@
   </main>
 
 </body>
-
+</main>
 <!--=========Début footer Cécile=============-->
 <footer>
   <p>Alexia:
@@ -93,5 +159,9 @@
   </p>
 </footer>
 <!--=========Fin footer Cécile=============-->
+<script src="app.js"></script>
+</body>
 
 </html>
+
+>>>>>>> main

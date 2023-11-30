@@ -1,33 +1,255 @@
+:root {
+    /*couleur texte et background*/
+    --color-h1: black;
+    --color-h2: #F29F05;
+    --background-color-button-submit: #F28705;
+    --shadow-color: #D9D6D2;
+    --color-question: #B0C14F;
+    --default-fontsize: 15px
+        /*font-style*/
+        --font-principale: 'Jaldi', sans-serif;
+
+}
+
+main {
+    margin: 5%;
+}
+
 * {
     box-sizing: border-box;
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 body {
     background-color: white;
+
+    font-size: var(--default-fontsize);
+
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     color: white;
-    background-color: #ee39d9e6;
     padding: 0.5em;
 }
 
-nav ul {
+header {
     display: flex;
+    justify-content: space-between;
+
+}
+
+header>img {
+    height: 5em;
+    width: 7em;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
     list-style: none;
     gap: 0.7em
+}
+
+/*nav a { 
+    margin: 1em;
+    text-decoration: none;
+    color: #F28705;
+    font-size: var(--default-fontsize);
+}*/
+
+/*nav a:hover{
+    color:white;
+    background-color: #F28705;
+    cursor: pointer;
+    padding: 0.7em;
+}*/
+
+/* Sidenav menu */
+nav {
+    padding: 1em;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -250px;
+    background-color: var(--color-h2);
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--shadow-color);
+}
+
+.sidenav ul {
+    list-style-type: none;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+/* Active class */
+.sidenav.active {
+    right: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+}
+
+/* Icône burger */
+.burger-icon span {
+    display: block;
+    justify-content: center;
+    width: 35px;
+    height: 5px;
+    background-color: var(--color-h2);
+    margin: 6px 0;
+}
+
+
+body>h1 {
+    min-height: 250px;
+    background-image: url(/assets/img/background-title.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: .5rem;
 }
 
 h1 {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    color: black;
+    font-size: 2.3em;
 }
 
-/* ========== Début CSS Cécile ============= */
+.sticker {
+    border: solid black;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 1em;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+section h3 {
+    text-align: center;
+}
+
+
+
+.choice {
+    background-color: orange;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+    max-width: 15em;
+}
+
+button.choice {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.choice:hover {
+    background-color: black;
+    color: white;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.next {
+    height: 4em;
+    background-color: aquamarine;
+    border-radius: 1em;
+}
+
+section.introduction {
+    padding: 0.5em;
+}
+
+.startmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+button.start {
+    width: 30%;
+    height: 100%;
+    border-radius: 8px;
+
+}
+
+#affichagescore {
+
+    border-radius: 300px;
+    background: #B0C14F;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    line-height: 1, 5em;
+    text-decoration: none;
+    margin-top: 15px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+
+}
+
 /*Classement des joueurs*/
 .classement {
     padding: 0.4em;
@@ -89,8 +311,15 @@ footer p {
     align-items: center;
 }
 
-/* media query classement et footer */
-@media screen and (min-width:600px) {
+@media screen and (min-width : 600px) {
+    #affichagescore {
+        width: 5em;
+        height: 5em;
+        display: block;
+        float: right;
+    }
+
+    /* media query classement et footer */
     .classement {
         margin: auto;
         margin-top: 2%;
@@ -103,5 +332,3 @@ footer p {
         margin-left: 35%;
     }
 }
-
-/* ========== FIN CSS Cécile ============= */
