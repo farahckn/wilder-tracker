@@ -6,31 +6,49 @@
     <title>Wilders Tracker</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="assets/img/favicon.ico" />
+    <script src="app.js"></script>
   </head>
-  <nav>
-    <ul>
-      <li>Home</li>
-      <li>Hing</li>
-      <li>Others</li>
-    </ul>
-  </nav>
   <body>
 
-    <main>
-      <h1 class="title-with-image">Wilder Quizz</h1>
-
-      <!--Partie avant questions-->
-    <section class="introduction">
-        <h2>Bienvenue Wilder</h2>
-        <p> Afin de t'aider à garder de bonnes habitudes lors de ta formation en remote réponds aux questions suivantes et découvre ton score !</p>
-      
-        <div class="startmenu">
-        <input placeholder="Indique ton prénom">
-
-        <button class="start"> Démarrer </button>
+    <header>
+      <img src="/assets/img/apple-touch-icon.png" alt="logo" />
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">×</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Hing</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
         </div>
-    </section>
-    
-    </main>
+
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </nav>
+    </header>
+
+    <h1>Wilder Tracker</h1>
+
+      <main>
+        <h1 class="title-with-image">Wilder Quizz</h1>
+  
+        <!--Partie avant questions-->
+      <section class="introduction">
+          <h2>Bienvenue Wilder</h2>
+          <p> Afin de t'aider à garder de bonnes habitudes lors de ta formation en remote réponds aux questions suivantes et découvre ton score !</p>
+        
+          <div class="startmenu">
+          <input placeholder="Indique ton prénom">
+  
+          <button class="start"> Démarrer </button>
+          </div>
+      </section>
+      
+      </main>
   </body>
 </html>
