@@ -23,3 +23,35 @@
   -> footer: avec linkdn et github        //  Cecile
 
 
+step2 : 
+nav/header -> Paul
+- logo au milieu pour format téléphone et à gauche pour desktop
+- enlever du padding sur le header 
+- Wilder Tracker à ajuster 
+- Changement du hover dans le menu burger (background blanc et home en orange)
+- Pour rendre transparent le fond du logo - utiliser remove bg 
+
+-> body
+  -> main
+    -> section 1 "Desciption" : texte font size en 2em 
+    -> section 2 formulaire : styliser input et le bouton (indique ton prénom et démarrer) , ajouter de la distance et réduite bouton démarrer
+
+-> section 3: Questions
+          -> section 3.1 - Thibaut
+              -> grid 5 sections :  boutons avec réponses à l'intérieur (comme les deux boutons du bas) , agrandir les vignettes de réponses et réduire la marge entre les vignettes
+                                    
+          -> section 3.2
+              -> grid 5 sections : boutons avec réponses à l'intérieur (comme les deux boutons du bas) , agrandir les vignettes de réponses et réduire la marge entre les vignettes
+          -> section 3.3
+              -> grid 5 sections : boutons avec réponses à l'intérieur (comme les deux boutons du bas) , agrandir les vignettes de réponses et réduire la marge entre les vignettes
+          -> section 3.4
+              -> grid 5 sections : boutons avec réponses à l'intérieur (comme les deux boutons du bas) , agrandir les vignettes de réponses et réduire la marge entre les vignettes
+          -> section 3.5
+              -> grid 5 sections : boutons avec réponses à l'intérieur (comme les deux boutons du bas) , agrandir les vignettes de réponses et réduire la marge entre les vignettesn
+    -> section 4: Alexia - affiner l'encart et afficher score et le chiffre juste à côté (en moins gros)
+                ajouter le même padding que sur la partie description/formulaire
+    -> section 5: message de result en attente JS
+    -> section 6: affichage d'un tableau avec result des wilders : ajouter font sur tableau
+  -> footer: réduire la largeur sur le footer, essayer de réduire les images 
+
+
