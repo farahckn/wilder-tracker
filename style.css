@@ -24,7 +24,9 @@ body {
     margin: 0;
     padding: 0;
 }
-html,body{
+
+html,
+body {
     height: 100%;
 }
 
@@ -227,33 +229,106 @@ button.start {
 }
 
 #affichagescore {
-       
+
     border-radius: 300px;
     background: #B0C14F;
     text-align: center;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     padding-top: 20px;
-    padding-bottom:20px;
+    padding-bottom: 20px;
     padding-right: 20px;
-    padding-left: 20px; 
-    line-height: 1,5em;
-    text-decoration: none; 
-    margin-top : 15px;
+    padding-left: 20px;
+    line-height: 1, 5em;
+    text-decoration: none;
+    margin-top: 15px;
     display: block;
     text-align: center;
     color: white;
     font-size: 20px;
-    
+
+}
+
+/*Classement des joueurs*/
+.classement {
+    padding: 0.4em;
+    background-image: url(assets/img/classement.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 70%;
+    border-radius: 0.5em;
+    box-shadow: 8px 8px 10px 0 #D9D6D2;
+    margin-top: 2%;
+}
+
+.classement table {
+    padding: 25px 0px;
+    margin: auto;
+    min-width: 90%;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 4px;
 }
 
 
+table thead th {
+    padding: 0.5em;
+    background-color: rgb(255, 255, 255, 80%);
+}
+
+table th,
+td {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+}
+
+table tr {
+    border-bottom: 1px solid #D9D6D2;
+}
+
+table td {
+    background-color: rgb(255, 255, 255, 80%);
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    background-color: #F29F05;
+}
+
+footer a {
+    padding: 0 0.2em;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (min-width : 600px) {
-#affichagescore {
-    width: 5em;
-    height: 5em; 
-display: block;
-float:right;
+    #affichagescore {
+        width: 5em;
+        height: 5em;
+        display: block;
+        float: right;
+    }
+
+    /* media query classement et footer */
+    .classement {
+        margin: auto;
+        margin-top: 2%;
+        min-width: 600px;
+        max-width: 50%;
+    }
+
+    .classement table {
+        min-width: 60%;
+        margin-left: 35%;
     }
 }
