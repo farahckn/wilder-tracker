@@ -4,43 +4,48 @@
     --color-h2: #F29F05;
     --background-color-button-submit: #F28705;
     --shadow-color: #D9D6D2;
-    --color-question:#B0C14F;
-    --default-fontsize:15px
+    --color-question: #B0C14F;
+    --default-fontsize: 15px
+        /*font-style*/
+        --font-principale: 'Jaldi', sans-serif;
 
+}
 
-    /*font-style*/
-    --font-principale: 'Jaldi',sans-serif;
-
+main {
+    margin: 5%;
 }
 
 * {
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-html,body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 body {
     background-color: white;
-    font-family: var(--font-principale);
+
     font-size: var(--default-fontsize);
-    max-width: 1440px;
+
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     color: white;
-    background-color: #ee39d9e6;
     padding: 0.5em;
-header {
-    display: flex;  
-    justify-content: space-between; 
 }
 
-header > img {
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+header>img {
     height: 5em;
     width: 7em;
 }
@@ -70,6 +75,7 @@ header ul {
 nav {
     padding: 1em;
 }
+
 .sidenav {
     height: 100%;
     width: 250px;
@@ -80,67 +86,67 @@ nav {
     background-color: var(--color-h2);
     padding-top: 60px;
     transition: left 0.5s ease;
-  }
-  
-  /* Sidenav menu links */
-  .sidenav a {
+}
+
+/* Sidenav menu links */
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
     color: white;
     display: block;
     transition: 0.3s;
-  }
-  
-  .sidenav a:hover {
+}
+
+.sidenav a:hover {
     color: var(--shadow-color);
-  }
-  
-  .sidenav ul {
+}
+
+.sidenav ul {
     list-style-type: none;
     flex-direction: column;
     padding: 0;
     margin: 0;
-  }
-  
-  /* Active class */
-  .sidenav.active {
+}
+
+/* Active class */
+.sidenav.active {
     right: 0;
-  }
-  
-  /* Close btn */
-  .sidenav .close {
+}
+
+/* Close btn */
+.sidenav .close {
     top: 0;
     left: 25px;
     font-size: 36px;
-  }
-  
-  /* Icône burger */
-  .burger-icon span {
+}
+
+/* Icône burger */
+.burger-icon span {
     display: block;
     justify-content: center;
     width: 35px;
     height: 5px;
     background-color: var(--color-h2);
     margin: 6px 0;
-  }
-  
+}
 
-body > h1 {
+
+body>h1 {
     min-height: 250px;
-    background-image:url(/assets/img/background-title.png);
+    background-image: url(/assets/img/background-title.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: .5rem;
 }
 
-h1{
+h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align:left;
-    color: black; 
-    font-size:2.3em; 
+    text-align: left;
+    color: black;
+    font-size: 2.3em;
 }
 
 .sticker {
@@ -200,21 +206,20 @@ button.choice {
 
 section.introduction {
     padding: 0.5em;
- }
- 
+}
+
 .startmenu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 
- button.start {
-     width: 30%;
-     height: 100%;
-     border-radius: 8px;
+button.start {
+    width: 30%;
+    height: 100%;
+    border-radius: 8px;
 
-     
- }
 
+}
