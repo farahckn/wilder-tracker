@@ -27,3 +27,31 @@ h1 {
     justify-content: center;
 }
 
+section.introduction {
+    padding: 0.5em;
+ }
+ 
+ h2 {
+
+ }
+ 
+ p {
+
+ }
+ 
+.startmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+ button.start {
+     width: 30%;
+     height: 100%;
+     border-radius: 8px;
+
+     
+ }
+
