@@ -3,6 +3,9 @@
     margin: 0;
     padding: 0;
 }
+html,body{
+    height: 100%;
+}
 
 body {
     background-color: white;
@@ -27,3 +30,34 @@ h1 {
     justify-content: center;
 }
 
+#affichagescore {
+       
+    border-radius: 300px;
+    background: #B0C14F;
+    text-align: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom:20px;
+    padding-right: 20px;
+    padding-left: 20px; 
+    line-height: 1,5em;
+    text-decoration: none; 
+    margin-top : 15px;
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    
+}
+
+
+@media screen and (min-width : 600px) {
+#affichagescore {
+    width: 5em;
+    height: 5em; 
+display: block;
+float:right;
+    }
+}
