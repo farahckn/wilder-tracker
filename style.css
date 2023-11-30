@@ -9,8 +9,8 @@ body {
 }
 
 nav {
-    display: flex;  
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
     color: white;
     background-color: #ee39d9e6;
     padding: 0.5em;
@@ -27,3 +27,59 @@ h1 {
     justify-content: center;
 }
 
+
+
+.sticker {
+    border: solid black;
+    margin: 5%;
+    padding: 5%;
+    border-radius: 1em;
+
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+section h3 {
+    text-align: center;
+}
+
+
+
+.choice {
+    background-color: orange;
+    margin: 2em;
+    padding: 2em;
+    border-radius: 20px;
+    transition-duration: 0.1s;
+    max-width: 15em;
+}
+
+button.choice {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.choice:hover {
+    background-color: black;
+    color: white;
+}
+
+.box2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+}
+
+.next {
+    height: 4em;
+    background-color: aquamarine;
+    border-radius: 1em;
+}
