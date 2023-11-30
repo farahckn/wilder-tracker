@@ -9,8 +9,8 @@ body {
 }
 
 nav {
-    display: flex;  
-    justify-content: flex-end; 
+    display: flex;
+    justify-content: flex-end;
     color: white;
     background-color: #ee39d9e6;
     padding: 0.5em;
@@ -27,3 +27,81 @@ h1 {
     justify-content: center;
 }
 
+/* ========== Début CSS Cécile ============= */
+/*Classement des joueurs*/
+.classement {
+    padding: 0.4em;
+    background-image: url(assets/img/classement.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 70%;
+    border-radius: 0.5em;
+    box-shadow: 8px 8px 10px 0 #D9D6D2;
+    margin-top: 2%;
+}
+
+.classement table {
+    padding: 25px 0px;
+    margin: auto;
+    min-width: 90%;
+    border-spacing: 2px;
+    -webkit-border-horizontal-spacing: 0px;
+    -webkit-border-vertical-spacing: 4px;
+}
+
+
+table thead th {
+    padding: 0.5em;
+    background-color: rgb(255, 255, 255, 80%);
+}
+
+table th,
+td {
+    text-align: center;
+    font-size: 1.2em;
+    padding: 0.2em 0.5em;
+}
+
+table tr {
+    border-bottom: 1px solid #D9D6D2;
+}
+
+table td {
+    background-color: rgb(255, 255, 255, 80%);
+}
+
+footer {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    background-color: #F29F05;
+}
+
+footer a {
+    padding: 0 0.2em;
+}
+
+footer p {
+    display: flex;
+    align-items: center;
+}
+
+/* media query classement et footer */
+@media screen and (min-width:600px) {
+    .classement {
+        margin: auto;
+        margin-top: 2%;
+        min-width: 600px;
+        max-width: 50%;
+    }
+
+    .classement table {
+        min-width: 60%;
+        margin-left: 35%;
+    }
+}
+
+/* ========== FIN CSS Cécile ============= */
