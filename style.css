@@ -293,27 +293,46 @@ section h3 {
 
 /* ==============================Thibault end */
 
+/* ============ Alexia == début partie score */
+
+
 #affichagescore {
 
-    border-radius: 300px;
+    border-radius: 200px;
     background: #B0C14F;
     text-align: center;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
-    line-height: 1, 5em;
+    margin-top: 5%;
+    /* line-height: 1,5em; */
     text-decoration: none;
-    margin-top: 15px;
-    display: block;
     text-align: center;
-    color: white;
     font-size: 20px;
 
 }
+#affichagescore h1{
+    color:white;
+    text-decoration:underline white;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 1%;
+}
+#affichagescore p {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    
+}
+
+/* ============ Alexia == fin partie score */
+
+
+/* ============ Alexia == début partie message */
+.message {
+    padding-left: 0.5em;
+}
+/* ============ Alexia == fin partie message */
 
 /*Classement des joueurs*/
 .classement {
@@ -376,6 +395,8 @@ footer p {
     align-items: center;
 }
 
+    
+
 @media screen and (min-width : 600px) {
 
     /* media query nav */
@@ -398,13 +419,33 @@ nav a:hover{
     display: none;
 }
 /* ========== */
-
+/* Alexia début media query pastille score */
     #affichagescore {
-        width: 5em;
+        width: 3em;
         height: 5em;
         display: block;
         float: right;
+        flex-direction: column;
+        text-decoration: none;
+        text-align: center;
+        /* font-size: 20px; */
     }
+    #affichagescore h1{
+        color:white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+        /* margin-right: 2%; */
+    }
+    #affichagescore p {
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        font-size: 20px;
+    
+        
+    }
+    /* ------fin Alexia adapte écran pastille score et score ---- */
 
     /* media query classement et footer */
     .classement {
