@@ -5,9 +5,10 @@
     --background-color-button-submit: #F28705;
     --shadow-color: #D9D6D2;
     --color-question: #B0C14F;
-    --default-fontsize: 15px
-        /*font-style*/
-        --font-principale: 'Jaldi', sans-serif;
+    --default-fontsize: 15px;
+    /*font-style*/
+    --font-principale: 'Jaldi', sans-serif;
+    --font-secondary: 'Jaldi', bold;
 
 }
 
@@ -35,22 +36,25 @@ body {
 
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-    padding: 0.5em;
-}
-
 header {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    align-items: center;
 }
 
-header>img {
+
+.logo {
+    display: flex;
+    justify-content: center;
     height: 5em;
     width: 7em;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5em; 
 }
 
 header ul {
@@ -59,25 +63,7 @@ header ul {
     list-style: none;
     gap: 0.7em
 }
-
-/*nav a { 
-    margin: 1em;
-    text-decoration: none;
-    color: #F28705;
-    font-size: var(--default-fontsize);
-}*/
-
-/*nav a:hover{
-    color:white;
-    background-color: #F28705;
-    cursor: pointer;
-    padding: 0.7em;
-}*/
-
 /* Sidenav menu */
-nav {
-    padding: 1em;
-}
 
 .sidenav {
     height: 100%;
@@ -102,7 +88,9 @@ nav {
 }
 
 .sidenav a:hover {
-    color: var(--shadow-color);
+    color: var(--background-color-button-submit);
+    background-color: white;
+    cursor: pointer;
 }
 
 .sidenav ul {
@@ -134,22 +122,24 @@ nav {
     margin: 6px 0;
 }
 
-
-body>h1 {
+.title {
+    display: flex;
+    align-items: center;
     min-height: 250px;
     background-image: url(/assets/img/background-title.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    width: 30%;
     text-align: left;
-    color: black;
-    font-size: 2.3em;
+    text-shadow: #f2870595;
+    color:var(--color-h2);
+    font-size: 3em;
 }
 
 section.introduction {
@@ -362,6 +352,28 @@ footer p {
 }
 
 @media screen and (min-width : 600px) {
+
+    /* media query nav */
+
+nav a { 
+    margin: 1em;
+    text-decoration: none;
+    color: #F28705;
+    font-size: var(--default-fontsize);
+}
+
+nav a:hover{
+    color:white;
+    background-color: #F28705;
+    cursor: pointer;
+    padding: 0.7em;
+}
+
+.burger-icon {
+    display: none;
+}
+/* ========== */
+
     #affichagescore {
         width: 5em;
         height: 5em;
