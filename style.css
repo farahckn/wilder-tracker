@@ -6,9 +6,8 @@
     --shadow-color: #D9D6D2;
     --color-question: #B0C14F;
     --default-fontsize: 15px;
-    /*font-style*/
     --font-principale: 'Jaldi', sans-serif;
-
+    --font-secondary: 'Jaldi', bold;
 }
 
 main {
@@ -35,22 +34,25 @@ body {
 
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-    padding: 0.5em;
-}
-
 header {
     display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
+    align-items: center;
 }
 
-header>img {
+
+.logo {
+    display: flex;
+    justify-content: center;
     height: 5em;
     width: 7em;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 5em; 
 }
 
 header ul {
@@ -59,25 +61,7 @@ header ul {
     list-style: none;
     gap: 0.7em
 }
-
-/*nav a { 
-    margin: 1em;
-    text-decoration: none;
-    color: #F28705;
-    font-size: var(--default-fontsize);
-}*/
-
-/*nav a:hover{
-    color:white;
-    background-color: #F28705;
-    cursor: pointer;
-    padding: 0.7em;
-}*/
-
 /* Sidenav menu */
-nav {
-    padding: 1em;
-}
 
 .sidenav {
     height: 100%;
@@ -102,7 +86,9 @@ nav {
 }
 
 .sidenav a:hover {
-    color: var(--shadow-color);
+    color: var(--background-color-button-submit);
+    background-color: white;
+    cursor: pointer;
 }
 
 .sidenav ul {
@@ -134,42 +120,80 @@ nav {
     margin: 6px 0;
 }
 
-
-body>h1 {
+.title {
+    display: flex;
+    align-items: center;
     min-height: 250px;
     background-image: url(/assets/img/background-title.png);
     background-repeat: no-repeat;
     background-size: cover;
-    padding: .5rem;
+    padding: 1rem;
 }
 
 h1 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    width: 30%;
     text-align: left;
-    color: black;
-    font-size: 2.3em;
+    text-shadow: #f2870595;
+    color:var(--color-h2);
+    font-size: 3em;
 }
 
-section.introduction {
-    padding: 0.5em;
+h2 {
+ 
+color: var(--color-h2);
+
 }
 
 .startmenu {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5em;
 
 }
+
+input {
+    padding: 0.5em;
+    font-size: var(--default-fontsize);
+    cursor: pointer;
+    color: white;
+    border : none;
+    outline: none;
+    background-color: var(--background-color-button-submit);
+    opacity: 0.75;
+    border-radius: 1em;
+    width: 50%;
+    box-shadow: 0 3px #dddbdbe6;
+ }
+
+ input::placeholder {
+    color: white;
+ }
 
 
 button.start {
-    width: 30%;
-    height: 100%;
-    border-radius: 8px;
-
+  padding: 1em 1em;
+  font-size: var(--default-fontsize);
+  color: #fff;
+  cursor: pointer;
+  background-color: var(--color-question);
+  border: none;
+  border-radius: 1em;
+  box-shadow: 0 5px #999;
 }
+
+button:hover {background-color: var(--color-question)}
+
+button:active {
+  background-color: var(--color-question);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
 
 /* ======================Thibault start */
 .sticker {
@@ -353,6 +377,28 @@ footer p {
 }
 
 @media screen and (min-width : 600px) {
+
+    /* media query nav */
+
+nav a { 
+    margin: 1em;
+    text-decoration: none;
+    color: #F28705;
+    font-size: var(--default-fontsize);
+}
+
+nav a:hover{
+    color:white;
+    background-color: #F28705;
+    cursor: pointer;
+    padding: 0.7em;
+}
+
+.burger-icon {
+    display: none;
+}
+/* ========== */
+
     #affichagescore {
         width: 5em;
         height: 5em;
