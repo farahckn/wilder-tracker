@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wilders Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets/img/favicon.ico" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Wilders Tracker</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="shortcut icon" href="assets/img/favicon.ico" />
-</head>
 
-<body>
-  <header>
-    <img class="rotate" src="/assets/img/apple-touch-icon.png" alt="logo" />
-    <nav>
-      <div id="mySidenav" class="sidenav">
-        <a id="closeBtn" href="#" class="close">×</a>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Hing</a></li>
-          <li><a href="#">Others</a></li>
-        </ul>
-      </div>
+  <body>
+    <header>
+      <img class="logo" src="/assets/img/apple-touch-icon.png" alt="logo" />
+      <nav>
+        <div id="mySidenav" class="sidenav">
+          <a id="closeBtn" href="#" class="close">×</a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Hing</a></li>
+            <li><a href="#">Others</a></li>
+          </ul>
+        </div>
+        <a href="#" id="openBtn">
+          <span class="burger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </a>
+      </nav>
+    </header>
 
-      <a href="#" id="openBtn">
-        <span class="burger-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </a>
-    </nav>
-  </header>
-
-  <h1>Wilders Tracker</h1>
-
+    <div class="title">
+      <h1>Wilders Tracker</h1>
+    </div>
+  
   <main>
 
     <!--Partie avant questions-->
@@ -48,124 +49,123 @@
         <button class="start"> Démarrer </button>
       </div>
     </section>
-    <!--=========Début  Thibault =============-->
-    <section class="sticker">
-      <h3> N°1 : Est-que tu dors bien? </h3>
-
-      <div class="box1">
-        <div class="div1"> Reponse A (< mettre du style): <br> bcp de text .. bcp de bcp de text ..bcp de text ..bcp de
-            text ....bcp de
-            text ..bcp de
-            text .. </div>
-        <div class="div2"> Reponsesbcp de text ..bcp de text ..bcp de text ..bcp de text ..</div>
-        <div class="div3"> Reponsesbcp de text ..bcp de text ..bcp de text ..bcp de text ..</div>
-        <div class="div4"> Reponsesbcp de text ..bcp de text ..bcp de text ..bcp de text ..</div>
-      </div>
-      <div class="box2">
-        <div class="div5">
-          <details>
-            <summary>
-              Regarde
-            </summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Quibusdam esse eum debitis qui accusamus commodi nisi expedita odit, facere,
-            sint cum ut unde libero autem vero necessitatibus amet totam minus.
-          </details>
+    
+      <!--=========Début  Thibault =============-->
+     
+      <!--=========Début  Thibault =============-->
+      <section>
+        <a id="affichagescore" href="#">
+          <h1>Score</h1>
+          <p>15</p>
+        </a>
+        <div class="message">
+          <h2><strong> Bravo ! </strong></h2>
+          <p>
+            Tu as obtenu un score de xx ! Tu es sur la bonne voie ! Tu as obtenu
+            un score de xx. N’hésites pas à suivre les conseils suivants pour
+            améliorer ton score :
+          </p>
         </div>
-        <div class="next"> <button>Suivant</button></div>
-      </div>
-    </section>
-    <!--=========Début  Thibault =============-->
-    <section>
-      <a id="affichagescore" href="#">
-
-        <h1>Score</h1>
-        <p>15</p>
-      </a>
-      <div class="message">
-        <h2><strong> Bravo ! </strong> </h2>
-        <p>
-          Tu as obtenu un score de xx !
-          Tu es sur la bonne voie !
-
-          Tu as obtenu un score de xx.
-          N’hésites pas à suivre les conseils suivants pour améliorer ton score :
-
-        </p>
-      </div>
-    </section>
-    <!--=========Début Classement Cécile=============-->
-    <section class="classement">
-      <table>
-        <thead>
-          <th>Rang</th>
-          <th>Joueur</th>
-          <th>Score</th>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>Cécile</td>
-            <td>15 pts</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>test2</td>
-            <td>test3</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>test2</td>
-            <td>test3</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>test2</td>
-            <td>test3</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>test2</td>
-            <td>test3</td>
-          </tr>
-          <tr>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <!--=========Fin Classement Cécile=============-->
-
-
-  </main>
-  <!--=========Début footer Cécile=============-->
-  <footer>
-    <p>Alexia:
-      <a href="https://github.com/CecDorWEB" target="_blank"><img src="assets/img/github-mark-white.png"></a>
-      <a href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/" target="_blank"><img
-          src="assets/img/linkedin_logo_square_icon_134016.png"></a>
-    </p>
-    <p>Cécile:
-      <a href="https://github.com/CecDorWEB" target="_blank"><img src="assets/img/github-mark-white.png"></a>
-      <a href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/" target="_blank"><img
-          src="assets/img/linkedin_logo_square_icon_134016.png"></a>
-    </p>
-    <p>Farah:
-      <a href="https://github.com/CecDorWEB" target="_blank"><img src="assets/img/github-mark-white.png"></a>
-      <a href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/" target="_blank"><img
-          src="assets/img/linkedin_logo_square_icon_134016.png"></a>
-    </p>
-    <p>Paul:
-      <a href="https://github.com/CecDorWEB" target="_blank"><img src="assets/img/github-mark-white.png"></a>
-      <a href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/" target="_blank"><img
-          src="assets/img/linkedin_logo_square_icon_134016.png"></a>
-    </p>
-    <p>Thibault:
-      <a href="https://github.com/CecDorWEB" target="_blank"><img src="assets/img/github-mark-white.png"></a>
-      <a href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/" target="_blank"><img
-          src="assets/img/linkedin_logo_square_icon_134016.png"></a>
-    </p>
-  </footer>
-  <!--=========Fin footer Cécile=============-->
-  <script src="app.js"></script>
-</body>
-
+      </section>
+      <!--=========Début Classement Cécile=============-->
+      <section class="classement">
+        <table>
+          <thead>
+            <th>Rang</th>
+            <th>Joueur</th>
+            <th>Score</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Cécile</td>
+              <td>15 pts</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>test2</td>
+              <td>test3</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>test2</td>
+              <td>test3</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>test2</td>
+              <td>test3</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>test2</td>
+              <td>test3</td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
+      </section>
+      <!--=========Fin Classement Cécile=============-->
+    </main>
+    <!--=========Début footer Cécile=============-->
+    <footer>
+      <p>
+        Alexia:
+        <a href="https://github.com/CecDorWEB" target="_blank"
+          ><img src="assets/img/github-mark-white.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/"
+          target="_blank"
+          ><img src="assets/img/linkedin_logo_square_icon_134016.png"
+        /></a>
+      </p>
+      <p>
+        Cécile:
+        <a href="https://github.com/CecDorWEB" target="_blank"
+          ><img src="assets/img/github-mark-white.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/"
+          target="_blank"
+          ><img src="assets/img/linkedin_logo_square_icon_134016.png"
+        /></a>
+      </p>
+      <p>
+        Farah:
+        <a href="https://github.com/CecDorWEB" target="_blank"
+          ><img src="assets/img/github-mark-white.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/"
+          target="_blank"
+          ><img src="assets/img/linkedin_logo_square_icon_134016.png"
+        /></a>
+      </p>
+      <p>
+        Paul:
+        <a href="https://github.com/CecDorWEB" target="_blank"
+          ><img src="assets/img/github-mark-white.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/"
+          target="_blank"
+          ><img src="assets/img/linkedin_logo_square_icon_134016.png"
+        /></a>
+      </p>
+      <p>
+        Thibault:
+        <a href="https://github.com/CecDorWEB" target="_blank"
+          ><img src="assets/img/github-mark-white.png"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/c%C3%A9cile-dorange-7a9302119/"
+          target="_blank"
+          ><img src="assets/img/linkedin_logo_square_icon_134016.png"
+        /></a>
+      </p>
+    </footer>
+    <!--=========Fin footer Cécile=============-->
+    <script src="app.js"></script>
+  </body>
 </html>
