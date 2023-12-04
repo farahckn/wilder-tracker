@@ -9,9 +9,10 @@
   <link rel="shortcut icon" href="assets/img/favicon.ico" />
 </head>
 
+
 <body>
   <header>
-    <img class="rotate" src="/assets/img/apple-touch-icon.png" alt="logo" />
+    <img class="logo" src="/assets/img/apple-touch-icon.png" alt="logo" />
     <nav>
       <div id="mySidenav" class="sidenav">
         <a id="closeBtn" href="#" class="close">×</a>
@@ -21,7 +22,6 @@
           <li><a href="#">Others</a></li>
         </ul>
       </div>
-
       <a href="#" id="openBtn">
         <span class="burger-icon">
           <span></span>
@@ -32,14 +32,17 @@
     </nav>
   </header>
 
-  <h1>Wilders Tracker</h1>
+  <div class="title">
+    <h1>Wilders Tracker</h1>
+  </div>
 
   <main>
 
     <!--Partie avant questions-->
     <section class="introduction">
       <h2>Bienvenue Wilder</h2>
-      <p> Afin de t'aider à garder de bonnes habitudes lors de ta formation en remote réponds aux questions suivantes et
+      <p class="firstparagraph"> Afin de t'aider à garder de bonnes habitudes lors de ta formation en remote réponds aux
+        questions suivantes et
         découvre ton score !</p>
 
       <div class="startmenu">
@@ -49,50 +52,61 @@
       </div>
     </section>
     <!--=========Début  Thibault =============-->
-    <section class="sticker">
-      <h3> N°1 : Est-que tu dors bien? </h3>
-
-      <div class="box1">
-        <div class="div1"> Reponse A (< mettre du style): <br> bcp de text .. bcp de bcp de text ..bcp de text ..bcp de
-            text ....bcp de
-            text ..bcp de
-            text .. </div>
-        <div class="div2"> Reponsesbcp de text ..bcp de text ..bcp de text ..bcp de text ..</div>
-        <div class="div3"> Reponsesbcp de text ..bcp de text ..bcp de text ..bcp de text ..</div>
-        <div class="div4"> Reponsesbcp de text ..bcp de text ..bcp de text ..bcp de text ..</div>
-      </div>
-      <div class="box2">
-        <div class="div5">
-          <details>
-            <summary>
-              Regarde
-            </summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Quibusdam esse eum debitis qui accusamus commodi nisi expedita odit, facere,
-            sint cum ut unde libero autem vero necessitatibus amet totam minus.
-          </details>
-        </div>
-        <div class="next"> <button>Suivant</button></div>
-      </div>
-    </section>
-    <!--=========Début  Thibault =============-->
-    <section>
+    <div class="score">
       <a id="affichagescore" href="#">
 
+        <h1>Scrrrrore</h1>
+        <p>15</p>
+      </a>
+      </section>
+      <section class="sticker">
+        <h3> N°1 : Est-que tu dors bien? </h3>
+        <div class="box1">
+          <div class="div1"> Reponse A <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora assumenda
+            repellendus error repudiandae aperiam, dolore maxime ullam, quisquam animi nesciunt odio eum odit
+          </div>
+          <div class="div2"> Reponse A <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora assumenda
+            repellendus error repudiandae aperiam, dolore maxime ullam, quisquam animi nesciunt odio eum odit
+          </div>
+          <div class="div3"> Reponse A <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora assumenda
+            repellendus error repudiandae aperiam, dolore maxime ullam, quisquam animi nesciunt odio eum odit
+            .</div>
+          <div class="div4"> Reponse A <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora assumenda
+            repellendus error repudiandae aperiam, dolore maxime ullam, quisquam animi nesciunt odio eum odit
+            .</div>
+        </div>
+        <div class="box2">
+          <div class="div5">
+            <details>
+              <summary>
+                Regarde
+              </summary>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Quibusdam esse eum debitis qui accusamus commodi nisi expedita odit, facere,
+              sint cum ut unde libero autem vero necessitatibus amet totam minus.
+            </details>
+          </div>
+          <div class="next"> <button>Suivant</button></div>
+        </div>
+      </section>
+    </div>
+
+    <!--========= Fin  Thibault =============-->
+
+    <section>
+      <a id="affichagescore" href="#">
         <h1>Score</h1>
         <p>15</p>
       </a>
       <div class="message">
-        <h2><strong> Bravo ! </strong> </h2>
+        <h2><strong> Bravo ! </strong></h2>
         <p>
-          Tu as obtenu un score de xx !
-          Tu es sur la bonne voie !
-
-          Tu as obtenu un score de xx.
-          N’hésites pas à suivre les conseils suivants pour améliorer ton score :
-
+          Tu as obtenu un score de xx ! Tu es sur la bonne voie ! Tu as obtenu
+          un score de xx. N’hésites pas à suivre les conseils suivants pour
+          améliorer ton score :
         </p>
       </div>
     </section>
+
     <!--=========Début Classement Cécile=============-->
     <section class="classement">
       <table>
@@ -134,7 +148,6 @@
       </table>
     </section>
     <!--=========Fin Classement Cécile=============-->
-
 
   </main>
   <!--=========Début footer Cécile=============-->
@@ -191,9 +204,10 @@
               src="assets/img/linkedin_logo_square_icon_134016.png"></a>
         </div>
       </details>
-
     </div>
   </footer>
+  <!--=========Fin footer Cécile=============-->
+  <script src="app.js"></script>
 </body>
 
 </html>
