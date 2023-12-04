@@ -5,9 +5,9 @@
     --background-color-button-submit: #F28705;
     --shadow-color: #D9D6D2;
     --color-question: #B0C14F;
-    --default-fontsize: 15px
-        /*font-style*/
-        --font-principale: 'Jaldi', sans-serif;
+    --default-fontsize: 1em;
+    /*font-style*/
+    --font-principale: 'Jaldi', sans-serif;
 
 }
 
@@ -17,22 +17,19 @@ main {
 
 * {
     box-sizing: border-box;
+    font-family: var(--font-principale);
+    font-size: var(--default-fontsize);
 }
 
 html,
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 html {
-    height: 100%;
-}
-
-body {
-    background-color: white;
-    font-size: var(--default-fontsize);
-
+    min-height: 100%;
 }
 
 nav {
@@ -302,25 +299,34 @@ section h3 {
 
 /*Classement des joueurs*/
 .classement {
-    padding: 0.4em;
+    padding: 0.5em;
     background-image: url(assets/img/classement.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: 70%;
     border-radius: 0.5em;
-    box-shadow: 8px 8px 10px 0 #D9D6D2;
-    margin-top: 2%;
+    box-shadow: 8px 8px 10px 0 var(--shadow-color);
+    margin-top: 5%;
 }
 
 .classement table {
-    padding: 25px 0px;
+    text-align: center;
+    padding: 5px 0px;
     margin: auto;
     min-width: 90%;
     border-spacing: 2px;
     -webkit-border-horizontal-spacing: 0px;
     -webkit-border-vertical-spacing: 4px;
+
 }
 
+.classement caption {
+
+    font-size: 3em;
+    color: rgb(255, 255, 255, 80%);
+    -webkit-text-stroke: 1px #F8F8F8;
+    text-shadow: white 1px 0 10px;
+}
 
 table thead th {
     padding: 0.5em;
@@ -342,24 +348,29 @@ table td {
     background-color: rgb(255, 255, 255, 80%);
 }
 
+/*Footer*/
 footer {
+    padding: 0.5em 0.5em 0em 0.5em;
+    min-height: 2em;
     color: white;
+    background-color: var(--color-h2);
+}
+
+footer .creators {
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 2em;
-    background-color: #F29F05;
 }
 
-footer a {
-    padding: 0 0.2em;
-}
-
-footer p {
+details .link {
     display: flex;
-    align-items: center;
 }
+
+.link img {
+    padding-right: 5px;
+}
+
 
 @media screen and (min-width : 600px) {
     #affichagescore {
@@ -374,7 +385,7 @@ footer p {
         margin: auto;
         margin-top: 2%;
         min-width: 600px;
-        max-width: 50%;
+        max-width: 80%;
     }
 
     .classement table {
