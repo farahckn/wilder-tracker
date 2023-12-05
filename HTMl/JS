@@ -1,1 +1,34 @@
+Nav : 
+Fonctionnalité 1 : Création menu burger -- OK 
+-> revoir la fonction en arrow / Paul 
+
+Section introduction :
+Fonctionnalité 2 : Garder la valeur dans l'input "Indique ton prénom" -- 
+Fonctionnalité 3 : Garder le prénom dans une constante pour qu'il soit réutiliser dans le tableau des scores -- 
+Fonctionnalité 4 : Faire apparaitre le score et la première question lorsqu'on appuie sur le bouton & ne pas démarrer la question et le score tant que l'utilisateur n'a pas entré son prénom. -- 
+(Pop-up "indique ton prénom pour commencer")
+
+Questions : 
+Fonctionnalité 5 : Utiliser le DOM pour créer les questions 
+Fonctionnalité 6 : Créer un autre fichier JS avec les 5 questions avec la question, les réponses, les points et les conseils. --
+Fonctionnalité 7 : Passage à la question suivante et réduction de la question précédente quand on clique sur le bouton "Suivant" --
+
+Score : 
+Fonctionnalité 8 : Augmentation du score quand on clique sur "Suivant" à chaque question --
+Fonctionnalité 9 : Personnalisation du message en fonction du nombre de point (if ... avec 3 possibilités) (optionnel: reprendre les conseils précédents) --
+Fonctionnalité 10 : Effet confetti lorsque le score est positif (résultat max = 100) --
+
+Classement : 
+Fonctionnalité 11 : Récupérer le nom du joueur et son score final --
+Fonctionnalité 12 : Enregistrer les résultats et les afficher du meilleur au pire score (garder les données saisies même si l'utilisateur rafraichit la page) --
+Fonctionnalité 13 : Réussir à limiter le tableau à 20 lignes et épurer les scores les plus faibles (les deux premiers en vert et les 3 derniers en rouge par exemple) --
+
+
+
+
+
+
+
+"Fonctionnalité  : Sauvegarde des résultats"   
+
 
