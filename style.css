@@ -298,26 +298,35 @@ section h3 {
     background: #b0c14f;
     text-align: center;
     display: flex;
-    justify-content: center;
     margin-top: 5%;
-    height: 3rem;
-    text-decoration: none;
-    text-align: center;
-}
-
-#affichagescore h1 {
-    color: white;
-    text-decoration: underline white;
-    text-align: center;
-    margin-right: 1%;
-}
-
-#affichagescore p {
-    color: white;
+    line-height: 1,5em;
     text-decoration: none;
     text-align: center;
     font-size: 20px;
-}
+    margin-bottom: 2%;
+  }
+  
+  
+   #affichagescore h1 {
+    color: white;
+    text-decoration: underline white;
+    text-align: center;
+    font-size: 21px;
+    justify-content: right;
+    padding-top: 0, 5%;
+    padding-left: 40%;
+  }
+  
+  
+  #affichagescore p {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 19px;
+    justify-content: right;
+    padding-left: 15%;
+  }
+  
 
 /* ============ Alexia == fin partie score */
 
@@ -430,32 +439,39 @@ details .link {
     /* ========== */
     /* Alexia début media query pastille score */
     #affichagescore {
-        margin-left: 1%;
-        width: 5em;
-        height: 8rem;
-        display: flex;
+        width: 3.5em;
+        height: 6em;
+        display: block;
         float: right;
         flex-direction: column;
         text-decoration: none;
         text-align: center;
         /* font-size: 20px; */
-    }
-
-    #affichagescore h1 {
-        display: flex;
+        margin-left: 2%;
+        padding-top: 2%;
+        padding-left: 0.5%;
+      }
+    
+    
+      #affichagescore h1 {
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        text-decoration: underline white;
+        justify-content: left;
+        padding-left: 5%;
+      }
+    
+    
+      #affichagescore p {
         color: white;
         text-decoration: none;
         text-align: center;
         font-size: 20px;
-        /* margin-right: 2%; */
-    }
-
-    #affichagescore p {
-        color: white;
-        text-decoration: none;
-        text-align: center;
-        font-size: 20px;
-    }
+        padding-left: 5%;
+        margin: 9%;
+      }
+    
 
     /* ------fin Alexia adapte écran pastille score et score ---- */
 
