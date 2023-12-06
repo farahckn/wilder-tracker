@@ -15,3 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         sidenav.classList.remove('active');
     }
 });
+
+/* nom de saisie dans l'input */
+
+

@@ -437,6 +437,11 @@ details .link {
     }
 
     /* ========== */
+
+    input {
+    width: 25%;
+    }
+
     /* Alexia début media query pastille score */
     #affichagescore {
         width: 3.5em;
@@ -487,3 +492,4 @@ details .link {
         min-width: 60%;
     }
 }
+
