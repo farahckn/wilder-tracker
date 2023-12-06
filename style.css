@@ -200,7 +200,18 @@ button:active {
         0px 0px 10px #d9d6d2,
         0px 0px 30px #d9d6d2;
 }
-
+.sticker img{
+    display: none;
+    max-width: 30%;
+    
+}
+.sticker .box1 button{
+    height: 180px;
+}
+.sticker .answer{
+    display: flex;
+    flex-direction: column;
+}
 section h3 {
     display: flex;
     text-align: center;
@@ -215,7 +226,7 @@ section h3 {
     grid-column-gap: 2em;
     grid-row-gap: 2em;
     align-items: center;
-    max-height: 500px;
+    max-height: 550px;
     padding: 0.5rem;
     gap: 0.5rem;
 }
@@ -432,6 +443,16 @@ details .link {
         display: none;
     }
 
+
+    .sticker img{
+        display: initial;
+        max-width: 30%;
+        padding-top: 2%;
+        
+    }
+    .sticker .box1 button{
+        min-height: 230px;
+    }
     .next button {
         width: 15rem;
     }
