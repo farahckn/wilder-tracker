@@ -34,7 +34,7 @@ const question = [
             },
             {
               text: "Je ne sais pas, c’est pas moi qui cuisine",
-                gif: "https://media.giphy.com/media/v8U7hrVmE6thV9ulhc/giphy.gi",
+                gif: "https://media.giphy.com/media/v8U7hrVmE6thV9ulhc/giphy.gif",
               point: 5
             },
             {
