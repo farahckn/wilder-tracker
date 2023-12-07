@@ -46,7 +46,7 @@
         découvre ton score !</p>
 
       <div class="startmenu">
-        <input placeholder="Indique ton prénom">
+        <input id="userName" placeholder="Indique ton prénom">
 
         <button class="start"> Démarrer </button>
       </div>
@@ -56,10 +56,11 @@
       <div class="score">
         <a id="affichagescore" href="#">
           <h1>Score</h1>
-          <p>15</p>
+          <p id="result">15</p>
         </a>
       </section>
 
+      <!--
       <section class="sticker">
         <h3> N°1 : Est-que tu dors bien? </h3>
         <div class="box1">
@@ -87,18 +88,15 @@
               sint cum ut unde libero autem vero necessitatibus amet totam minus.
             </details>
           </div>
-          <div class="next"> <button>Suivant</button></div>
+          <div class="next"> <button class="next">Suivant</button></div>
         </div>
-      </section>
+      </section> -->
     </div>
 
     <!--========= Fin  Thibault =============-->
 
     <section>
-      <!--<a id="affichagescore" href="#">
-        <h1>Score</h1>
-        <p>15</p>
-      </a>-->
+     
       <div class="message">
         <h2> Bravo ! </h2>
         <p>
@@ -183,7 +181,7 @@
     </div>
   </footer>
   <!--=========Fin footer Cécile=============-->
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 
 </html>
