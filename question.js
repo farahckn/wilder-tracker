@@ -108,7 +108,7 @@ const question = [
             },
             {
               text: "Il faut me trainer pour sortir",
-              gif: "https://giphy.com/clips/viralhog-IUkZO4Lko7ENHltXt7",
+              gif: "https://media.giphy.com/media/bde9wzYKKO7EA/giphy.gif",
               point: 10
             },
             {
