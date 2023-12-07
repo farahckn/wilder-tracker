@@ -122,7 +122,7 @@ header ul {
     display: flex;
     align-items: center;
     min-height: 250px;
-    background-image: url(/assets/img/background-title.png);
+    background-image: url(assets/img/background-title.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1rem;
@@ -180,7 +180,7 @@ button.start {
     margin: 1% 0 2.5% 0;
 }
 
-button:hover: {
+button:hover {
     background-color: var(--color-question);
 }
 
