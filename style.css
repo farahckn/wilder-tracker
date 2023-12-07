@@ -180,7 +180,7 @@ button.start {
     margin: 1% 0 2.5% 0;
 }
 
-button:hover {
+button:hover: {
     background-color: var(--color-question);
 }
 
@@ -512,8 +512,8 @@ details .link {
     .classement table {
         min-width: 60%;
     }
-    .buttonChoice {
-    background-color: var(--color-question);
-}
 }
 
+.buttonChoice {
+    background-color: var(--color-question);
+}
