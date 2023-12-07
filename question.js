@@ -1,8 +1,6 @@
 const question = [
     {
-        name: "Question 1",
-        title: "Est-ce que tu as bien dormi ?",
-        
+        name: "Question 1 - Est-ce que tu as bien dormi ?"
         answers: [
             {
                 text: "Oui comme un loir, j’ai l’habitude de me coucher tôt !",
@@ -29,36 +27,32 @@ const question = [
           ],  
     },
     {
-        name: "Question 2",
-        title: "Dis moi ce que tu manges, je te dirais si c’est bien ? ",
-        
+        name: "Question 2 - Dis moi ce que tu manges, je te dirais si c’est bien ? ",
         answers: [
             {
               text: "5 fruits et légumes comme tous les jours !",
-                gif: "https://giphy.com/gifs/pixel-art-8bit-vegetables-26BGFJ4c5v2dhlYdy",
+                gif: "https://media.giphy.com/media/26BGFJ4c5v2dhlYdy/giphy.gif",
               point: 20
             },
             {
               text: "Je ne sais pas, c’est pas moi qui cuisine",
-                gif: "https://giphy.com/gifs/MontreuxComedy-v8U7hrVmE6thV9ulhc",
+                gif: "https://media.giphy.com/media/v8U7hrVmE6thV9ulhc/giphy.gi",
               point: 5
             },
             {
               text: "Aujourd’hui c’est resto, faut se faire plaisir !",
-                gif: "https://giphy.com/gifs/TeamTO-mighty-mops-mike-une-vie-de-chien-mighyt-iJgoGwkqb1mmH1mES3",
+                gif: "https://media.giphy.com/media/iJgoGwkqb1mmH1mES3/giphy.gif",
               point: 15
             },
             {
               text: "Exclusivement de burgers mais y a de la salade, ça équilibre !",
-                gif: "https://giphy.com/gifs/funny-bob-sponge-twf4C7uvO3F96",
+                gif: "https://media.giphy.com/media/iZjoLdS1nwMRq/giphy.gif",
               point: 10
           },
             advice:"conseil pour bien manger : Il est recommandé de manger équilibré et environ 5 fruits et légumes par jour : https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite"
           ],  
     },{
-        name: "Question 3",
-        title: "Tu n’arrives toujours pas à saisir les fonctions d’ordre supérieur sur Javascript, quel est ton mood ?",
-        
+        name: "Question 3 - Tu n’arrives toujours pas à saisir les fonctions d’ordre supérieur sur Javascript, quel est ton mood ?",
         answers: [
             {
               text: "Tu restes toute la nuit éveillé en enchainant les tutoriels sur YouTube",
@@ -84,9 +78,7 @@ const question = [
           ],   
 },
 {
-        name: "Question 4",
-        title: "Quel sportif est-tu?",
-        
+        name: "Question 4 - Quel sportif est-tu?",
         answers: [
             {
               text: "Appel moi The ROCK!",
@@ -112,9 +104,7 @@ const question = [
           ],  
     },
     {
-        name: "Question 5",
-        title: "Continuer a sortir",
-        
+        name: "Question 5 - Continuer a sortir",
         answers: [
             {
               text: "De temps en temps pour enflammer le dance floor",
