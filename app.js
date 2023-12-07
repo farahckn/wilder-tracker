@@ -1,5 +1,5 @@
 import question from './question.js';
-import { createQuestion, createTable } from './dom.js';
+import { createTable } from './dom.js';
 
 /*function Burger*/
 document.addEventListener('DOMContentLoaded', function () {
@@ -37,7 +37,7 @@ function intro() {
   tableau[x] = idInput1.value; // enregistre la valeur du champ dans un tableau
 }
 
-/* bouton démarrer et lancement de la premiere question*/
+/* bouton démarrer et lancement de la premiere question
 
 const startButton = document.querySelector('.start');
 
@@ -48,8 +48,9 @@ startButton.addEventListener('click', () => {
     window.alert('Saisissez votre prénom pour commencer');
   } else {
     createQuestion(question[0]);
+    finalScore = 0
   }
-});
+});*/
 
 /* button question*/
 
@@ -96,11 +97,14 @@ for (let i = 0; i < buttons.length; i++) {
 handleButtons('.box1');*/
 
 /* Début fonction Cécile Classement
-for (let i = 0; i < rang.length;i++){
-  if (userName[i] !== undefined) {
-  createTable(rang[i],userName[i],score[i])
+
+
+
+for (let i = 0; i < rang.length; i++) {
+  if (user[i] !== undefined) {
+    createTable(rang[i], user[i], finalScore[i]);
   } else {
-      breack
+    breack;
   }
 }
 /* Fin fonction Cécile Classement*/

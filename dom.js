@@ -1,6 +1,7 @@
 import question from './question.js';
 
 /* function creation de vignette / function create sticker */
+
 let temporaryScore = 0;
 const validScore = [];
 let finalScore = 0;
@@ -9,7 +10,7 @@ let questionNum = 0;
 
 const section = document.querySelector('section:nth-child(2)');
 
-function createQuestion({ name, answers, advice }) {
+function createQuestion({ name, answers, advice, url }) {
   const newSection = document.createElement('section');
   newSection.classList.add('sticker');
   section.appendChild(newSection);
@@ -59,6 +60,12 @@ function createQuestion({ name, answers, advice }) {
   newSummary.innerText = 'Regarde';
   newDetails.appendChild(newSummary);
 
+  const a = document.createElement('a');
+  a.href = url;
+  a.target = '_blank';
+  a.textContent = 'Clique ici !';
+  newDetails.appendChild(a);
+
   const newDivButton = document.createElement('div');
   newDivButton.classList.add('next');
   bigBox2.appendChild(newDivButton);
@@ -68,42 +75,110 @@ function createQuestion({ name, answers, advice }) {
   btnNext.innerText = 'Suivant';
   newDivButton.appendChild(btnNext);
 
+  //bouton next
+
   btnNext.addEventListener('click', () => {
-    //Ajouter le score temporaire au score total
-    //Passer à la suite
+    if (newSection.parentNode) {
+      newSection.parentNode.removeChild(newSection);
+    }
+    finalScore += temporaryScore;
     questionNum++;
-    createQuestion(question[questionNum]);
-    //Condition si dernière carte afficher résultat
+    if (questionNum < question.length) {
+      temporaryScore = 0;
+      createAffScore();
+      createQuestion(question[questionNum]);
+    } else {
+      console.log('Final Score:', finalScore);
+      const userName = [userNameInput.value.trim()];
+      questionNum = 0;
+      createMessage();
+      createAffScore();
+      createTable(1, userName, finalScore);
+    }
   });
 }
 
-//createQuestion(question[4]);
+//Création affichage score
 
-/* partie DOM cécile début*/
+const affichageScore = document.querySelector('#affichagescore');
+
+function createAffScore() {
+  const p = document.createElement('p');
+  p.classList.add('result');
+  p.innerText = finalScore;
+  affichageScore.appendChild(p);
+
+  supprPrecedent(p);
+}
+
+// création message
+const message = document.querySelector('.message');
+
+function createMessage() {
+  const h2 = document.createElement('h2');
+  h2.innerText = h1Message();
+  message.appendChild(h2);
+
+  const p = document.createElement('p');
+  p.innerText = `Tu as obtenu un score de ${finalScore} pts! Pour améliorer ton score n’hésites pas à suivre les conseils proposés dans chaque question.`;
+  h2.appendChild(p);
+
+  supprPrecedent(h2);
+}
+
+function supprPrecedent(elem) {
+  if (elem.previousSibling) {
+    elem.parentNode.removeChild(elem.previousSibling);
+  }
+}
+
+function h1Message() {
+  if (finalScore >= 70) {
+    return 'Bravo ! Tu as obtenu un excellent score !';
+  } else if (finalScore > 40) {
+    return 'Pas mal ! Tu es sur la bonne voie !';
+  } else {
+    return 'Tu peux faire mieux !';
+  }
+}
+
+/* création tableau*/
+
 const rang = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 ];
-const userName = ['jean', 'paul', 'pierre', 'lola', 'bob'];
-const score = [12, 15, 50, 60, 80];
+const userNameInput = document.getElementById('userName');
 
 function createTable(rang, userName, score) {
   const tr = document.createElement('tr');
 
   const tdRang = document.createElement('td');
-  tdRang.innerText = `${rang}`;
+  tdRang.innerText = rang;
   tr.appendChild(tdRang);
 
   const tdUserName = document.createElement('td');
-  tdUserName.innerText = `${userName}`;
+  tdUserName.innerText = userName;
   tr.appendChild(tdUserName);
 
   const tdScore = document.createElement('td');
-  tdScore.innerText = `${score} pts`;
+  tdScore.innerText = finalScore;
   tr.appendChild(tdScore);
 
   document.getElementById('tableScore').appendChild(tr);
 }
 
-/* partie DOM cécile fin*/
+/*bouton démarrer et lancement de la premiere question */
 
-export { createQuestion, createTable };
+const startButton = document.querySelector('.start');
+
+startButton.addEventListener('click', () => {
+  const inputName = document.querySelector('#userName');
+  if (inputName.value === '') {
+    window.alert('Saisissez votre prénom pour commencer');
+  } else {
+    createQuestion(question[0]);
+    finalScore = 0;
+  }
+});
+
+export { createTable };

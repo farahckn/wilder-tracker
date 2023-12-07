@@ -24,7 +24,8 @@ const question = [
       },
     ],
     advice:
-      'Il est recommandé de dormir au moins 7 heures par nuit. Suit le lien pour trouver des conseils : https://institut-sommeil-vigilance.org/10-recommandations-de-nos-medecins-du-sommeil-pour-bien-dormir/',
+      'Il est recommandé de dormir au moins 7 heures par nuit. Suis le lien pour trouver des conseils :',
+    url: 'https://institut-sommeil-vigilance.org/10-recommandations-de-nos-medecins-du-sommeil-pour-bien-dormir/',
   },
   {
     name: 'Question 2 - Dis moi ce que tu manges, je te dirais si c’est bien ? ',
@@ -51,7 +52,8 @@ const question = [
       },
     ],
     advice:
-      'conseil pour bien manger : Il est recommandé de manger équilibré et environ 5 fruits et légumes par jour : https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite',
+      'conseil pour bien manger : Il est recommandé de manger équilibré et environ 5 fruits et légumes par jour :',
+    url: 'https://www.mangerbouger.fr/l-essentiel/les-recommandations-sur-l-alimentation-l-activite-physique-et-la-sedentarite',
   },
   {
     name: 'Question 3 - Tu n’arrives toujours pas à saisir les fonctions d’ordre supérieur sur Javascript, quel est ton mood ?',
@@ -78,13 +80,14 @@ const question = [
       },
     ],
     advice:
-      "Conseil : Une attitude positive vous permet de vous détendre, de vous souvenir, de vous concentrer et d'absorber les informations tout en apprenant. Vous êtes prêt à accueillir de nouvelles expériences et à reconnaître de nombreux types d'opportunités d'apprentissage. Et quand on voit des opportunités, l’espoir augmente :https://medium.com/@chrisplusone/the-benefits-of-positive-thinking-for-students-6510ce1b9a2b",
+      "Conseil : Une attitude positive vous permet de vous détendre, de vous souvenir, de vous concentrer et d'absorber les informations tout en apprenant. Vous êtes prêt à accueillir de nouvelles expériences et à reconnaître de nombreux types d'opportunités d'apprentissage. Et quand on voit des opportunités, l’espoir augmente :",
+    url: 'https://medium.com/@chrisplusone/the-benefits-of-positive-thinking-for-students-6510ce1b9a2b',
   },
   {
-    name: 'Question 4 - Quel sportif est-tu?',
+    name: 'Question 4 - Quel sportif es-tu?',
     answers: [
       {
-        text: 'Appel moi The ROCK!',
+        text: 'Appelle-moi The ROCK!',
         gif: 'https://media.giphy.com/media/GPUS2VOQXRgYLR6CjP/giphy.gif',
         point: 20,
       },
@@ -105,10 +108,11 @@ const question = [
       },
     ],
     advice:
-      'https://toutpourmasante.fr/se-mettre-au-sport-9-conseils-pour-bien-commencer/',
+      "L'activité physique est trés bénéfique pour ton coeur, ton corps et ton esprit. Pour t'aider à bouger :",
+    url: 'https://toutpourmasante.fr/se-mettre-au-sport-9-conseils-pour-bien-commencer/',
   },
   {
-    name: 'Question 5 - Continuer a sortir',
+    name: 'Question 5 - Pendant la formation, est-ce que tu sors?',
     answers: [
       {
         text: 'De temps en temps pour enflammer le dance floor',
@@ -132,6 +136,7 @@ const question = [
       },
     ],
     advice: "Conseil du jour: sors tous les jours pour t'aérer l'esprit ",
+    url: 'https://www.agenda-des-sorties.com/',
   },
 ];
 
