@@ -180,7 +180,7 @@ button.start {
     margin: 1% 0 2.5% 0;
 }
 
-button:hover: {
+button:hover {
     background-color: var(--color-question);
 }
 
