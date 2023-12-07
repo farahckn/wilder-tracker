@@ -123,7 +123,7 @@ const question = [
             },
             {
               text: "Quoi? le covid c'est terminé?",
-              gif: "https://tenor.com/fr/view/yanatwt-gif-22814884",
+              gif: "https://media.giphy.com/media/3oz8xVhDcU1txAYI1i/giphy.gif",
               point: 5
           },
             advice:"Conseil du jour: sors tous les jours pour t'aérer l'esprit " 
