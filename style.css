@@ -512,5 +512,8 @@ details .link {
     .classement table {
         min-width: 60%;
     }
+    .buttonChoice {
+    background-color: var(--color-question);
+}
 }
 
