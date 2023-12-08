@@ -161,6 +161,8 @@ console.log(listUser);
 const listFinalScore = ['75', '60'];
 console.log(listFinalScore);
 
+const tableScore = document.getElementById('tableScore')
+
 function createTable(rang, userName, listFinalScore) {
   const tr = document.createElement('tr');
 
@@ -176,10 +178,14 @@ function createTable(rang, userName, listFinalScore) {
   tdScore.innerText = listFinalScore;
   tr.appendChild(tdScore);
 
-  document.getElementById('tableScore').appendChild(tr);
+  tableScore.appendChild(tr);
 }
 
 function readCreateTable() {
+  while (tableScore.firstChild) {
+    tableScore.firstChild.remove()
+  }
+
   for (let i = 0; i < rang.length; i++) {
     if (listUser[i] !== undefined) {
       createTable(rang[i], listUser[i], listFinalScore[i]);
