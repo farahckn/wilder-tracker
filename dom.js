@@ -90,10 +90,11 @@ function createQuestion({ name, answers, advice, url }) {
     } else {
       console.log('Final Score:', finalScore);
       const userName = [userNameInput.value.trim()];
+      listFinalScore.push(finalScore);
       questionNum = 0;
       createMessage();
       createAffScore();
-      createTable(1, userName, finalScore);
+      readCreateTable();
     }
   });
 }
@@ -147,9 +148,16 @@ function h1Message() {
 const rang = [
   1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
 ];
+
 const userNameInput = document.getElementById('userName');
 
-function createTable(rang, userName, score) {
+const listUser = ['Cécile', 'Paul'];
+console.log(listUser);
+
+const listFinalScore = ['75', '60'];
+console.log(listFinalScore);
+
+function createTable(rang, userName, listFinalScore) {
   const tr = document.createElement('tr');
 
   const tdRang = document.createElement('td');
@@ -161,10 +169,20 @@ function createTable(rang, userName, score) {
   tr.appendChild(tdUserName);
 
   const tdScore = document.createElement('td');
-  tdScore.innerText = finalScore;
+  tdScore.innerText = listFinalScore;
   tr.appendChild(tdScore);
 
   document.getElementById('tableScore').appendChild(tr);
+}
+
+function readCreateTable() {
+  for (let i = 0; i < rang.length; i++) {
+    if (listUser[i] !== undefined) {
+      createTable(rang[i], listUser[i], listFinalScore[i]);
+    } else {
+      break;
+    }
+  }
 }
 
 /*bouton démarrer et lancement de la premiere question */
@@ -177,6 +195,7 @@ startButton.addEventListener('click', () => {
     window.alert('Saisissez votre prénom pour commencer');
   } else {
     createQuestion(question[0]);
+    listUser.push(inputName.value.trim());
     finalScore = 0;
   }
 });
