@@ -31,6 +31,10 @@ function createQuestion({ name, answers, advice, url }) {
 
     const img = document.createElement('img');
     img.src = gif;
+    img.style.height = '90%';
+    img.style.width = 'auto';
+    img.style.borderRadius = '20px';
+   
     btnAnswer.appendChild(img);
 
     btnAnswer.addEventListener('click', () => {
