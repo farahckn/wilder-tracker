@@ -168,7 +168,7 @@ header ul {
   background-image: url(assets/img/background-title.png);
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 1rem;
+  padding-left: 80px;
 }
 
 h1 {
@@ -179,6 +179,7 @@ h1 {
   text-shadow: #f2870595;
   color: var(--color-h2);
   font-size: 3em;
+  text-shadow: 0 5px rgba(255, 255, 255, 0.765);
 }
 
 h2 {
