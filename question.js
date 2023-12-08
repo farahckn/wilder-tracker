@@ -70,7 +70,7 @@ const question = [
       },
       {
         text: 'Tu lâches l’affaire !',
-        gif: 'https://i.pinimg.com/originals/fe/48/e2/fe48e2532fe7642a73b4c4e74e923a4f.jpg',
+        gif: 'https://media1.tenor.com/m/fV2bXnVB-WcAAAAC/aight-imma-head-out-im-out-this-bitch.gif',
         point: 10,
       },
       {
@@ -103,7 +103,7 @@ const question = [
       },
       {
         text: 'Pfffffff la réponse me fatigue déjà',
-        gif: 'https://media.giphy.com/media/8hXXilmk33wtmAGJNu/giphy.gif',
+        gif: 'https://media.giphy.com/media/gdUxfKtxSxqtq/giphy.gif',
         point: 5,
       },
     ],
