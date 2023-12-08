@@ -371,6 +371,7 @@ section h3 {
   justify-content: right;
   padding-top: 0, 5%;
   padding-left: 40%;
+  text-shadow:none;
 }
 
 #affichagescore p {
@@ -522,6 +523,7 @@ details .link {
     text-underline-offset: 3px;
     justify-content: left;
     padding-left: 5%;
+    text-shadow:none;
   }
 
   #affichagescore p {
@@ -533,6 +535,7 @@ details .link {
     /* margin: 9%; */
     padding-right: 15%;
     justify-content: center;
+
   }
 
   /* ------fin Alexia adapte écran pastille score et score ---- */
