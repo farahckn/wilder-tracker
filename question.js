@@ -103,7 +103,7 @@ const question = [
       },
       {
         text: 'Pfffffff la réponse me fatigue déjà',
-        gif: 'https://media.giphy.com/media/8hXXilmk33wtmAGJNu/giphy.gif',
+        gif: 'https://media.giphy.com/media/gdUxfKtxSxqtq/giphy.gif',
         point: 5,
       },
     ],
@@ -141,4 +141,3 @@ const question = [
 ];
 
 export default question;
- 

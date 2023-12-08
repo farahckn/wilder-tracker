@@ -54,11 +54,6 @@ startButton.addEventListener('click', () => {
 
 /* button question*/
 
-function answerChoice() {
-  const button = document.getElementsByClassName('answer');
-  button.style.color = 'blue';
-}
-
 /*paramétrage score*/
 /*
 let score = 0;
@@ -99,6 +94,13 @@ handleButtons('.box1');*/
 /* Début fonction Cécile Classement
 
 
+const rang = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
+const listUser = ['Cécile', 'Paul'];
+listUser.push('bob');
+const listFinalScore = ['15', '45'];
+listFinalScore.push(finalScore);
 
 for (let i = 0; i < rang.length; i++) {
   if (user[i] !== undefined) {
